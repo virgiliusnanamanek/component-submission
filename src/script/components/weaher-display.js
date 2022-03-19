@@ -15,7 +15,7 @@ class WeatherDisplay extends HTMLElement {
                 border-radius: 4px;
             }
             </style>
-            <div class="contentRight card">
+            <div class="card">
             </div>
         `
     }

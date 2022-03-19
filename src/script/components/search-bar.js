@@ -6,6 +6,13 @@ class SearchBar extends HTMLElement {
     connectedCallback(){
         this.render();
     }
+    set clickEvent(event){
+        this._clickEvent = event;
+        this.render();
+    }
+    get value(){
+        return this.shadowDOM.getElementById('input').value;
+    }
     render(){
         this.shadowRoot.innerHTML = `
         <style>
@@ -41,6 +48,8 @@ class SearchBar extends HTMLElement {
             <button type="submit" id="btnGo">Go</button>
         </div>
         `
+        const btnGo = this.shadowDOM.getElementById('btnGo');
+        btnGo.addEventListener('click', this._clickEvent);
     }
 }
 customElements.define('search-bar', SearchBar);
