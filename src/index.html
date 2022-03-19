@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <app-nav></app-nav>
+       <div class="contentHeader">
+        <div class="contentLeft" id="contentLeft">
+            <text-header></text-header>
+            <search-bar></search-bar>
+        </div>
+        <div class="contentRight">
+            <weather-display></weather-display>
+        </div>
+       </div>
+    </header>
+    <script src="./components/nav-bar.js"></script>
+    <script src="./components/weaher-display.js"></script>
+    <script src="./components/text-header.js"></script>
+    <script src="./components/search-bar.js"></script>
+</body>
+
+</html>
