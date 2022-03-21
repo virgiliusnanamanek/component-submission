@@ -39,7 +39,7 @@ class SearchBar extends HTMLElement {
             border-radius: 4px;
         }
         #btnGo:hover{
-            background-color: aqua;
+            background-color: #0E185F;
             transition: all ease-in 0.45s;
         }
         </style>

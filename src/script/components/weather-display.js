@@ -13,6 +13,8 @@ class WeatherDisplay extends HTMLElement {
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 height: 350px;
                 border-radius: 4px;
+                background-color : #fff;
+                cursor : pointer;
             }
             </style>
             <div class="card">
